@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/reviews_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:text="Reviews"
+            android:textSize="25dp"
+            android:layout_alignParentTop="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/review_list"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/review_editText"
+            android:layout_below="@+id/reviews_label"
+            android:layout_alignParentBottom="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dddddd"
+            android:hint="Write you review.."
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/review_editText"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@+id/submit_button"
+            android:layout_alignTop="@+id/submit_button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="5dp"
+            android:id="@+id/submit_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
